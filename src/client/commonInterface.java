@@ -16,12 +16,8 @@ public interface commonInterface extends Remote {
 
     public List<MessageInfo> getCurrentMessages() throws RemoteException;
     
-    public List<MessageInfo> getAllMessages() throws RemoteException;
+    public List<MessageInfo> getAllMessages() throws RemoteException;   
     
-    public List<MessageInfo> getPrivateMessages() throws RemoteException;
-    
-    public void sendPrivateMessage(String from, String to,commonInterface chat,MessageInfo message) throws RemoteException;
-
     public List<String> getAllUsers() throws RemoteException;
 
     public void login(String username) throws RemoteException;
